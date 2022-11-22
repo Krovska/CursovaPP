@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="main" prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: #B7CDEE;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cursova2.controller.AddCarController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="401.0" prefWidth="640.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label alignment="CENTER" layoutX="161.0" layoutY="34.0" text="Enter information about car" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow height="95.86" radius="49.185" spread="0.4" width="102.88">
+                     <color>
+                        <Color green="0.03333333507180214" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <TextField fx:id="CarID" layoutX="89.0" layoutY="103.0" prefHeight="26.0" prefWidth="126.0">
+               <effect>
+                  <InnerShadow />
+               </effect></TextField>
+            <Label layoutX="27.0" layoutY="106.0" text="Car ID">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="seatsNumber" layoutX="155.0" layoutY="134.0" prefHeight="25.0" prefWidth="60.0">
+               <effect>
+                  <InnerShadow />
+               </effect></TextField>
+            <Label layoutX="27.0" layoutY="166.0" text="Select the type of car">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="134.0" text="Number of seats">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="choseComfortClass" layoutX="183.0" layoutY="166.0" prefWidth="150.0">
+               <effect>
+                  <InnerShadow />
+               </effect></ChoiceBox>
+            <Label layoutX="27.0" layoutY="200.0" text="Number of passengers">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pessengersNumber" layoutX="196.0" layoutY="200.0" prefHeight="25.0" prefWidth="60.0">
+               <effect>
+                  <InnerShadow />
+               </effect></TextField>
+            <Label layoutX="28.0" layoutY="233.0" prefHeight="26.0" prefWidth="149.0" text="Amount of luggage">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="luggageAmount" layoutX="176.0" layoutY="233.0" prefHeight="25.0" prefWidth="60.0">
+               <effect>
+                  <InnerShadow />
+               </effect></TextField>
+            <Button fx:id="apply" layoutX="295.0" layoutY="307.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="76.0" text="Apply">
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <Label layoutX="28.0" layoutY="260.0" prefHeight="38.0" prefWidth="114.0" text="Number of train">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numberOfTrainFild" layoutX="148.0" layoutY="266.0" prefHeight="25.0" prefWidth="60.0">
+               <effect>
+                  <InnerShadow />
+               </effect></TextField>
+            <Label fx:id="numberWarning" layoutX="286.0" layoutY="333.0" text="Click on Apply">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+    </AnchorPane>
+  </children>
+</VBox>
